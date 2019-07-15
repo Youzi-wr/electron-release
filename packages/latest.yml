@@ -1,0 +1,8 @@
+version: 3.0.3
+files:
+  - url: crdc-v3.0.3-win.exe
+    sha512: HH3ppWB2GpJQd/4HETNU5+ia1XLpyS228GISYs5Xrp6VRwbCxgdRXoYOrb59zQbc4yeAIe3H3Irv65/Y/ETXSw==
+    size: 101002634
+path: crdc-v3.0.3-win.exe
+sha512: HH3ppWB2GpJQd/4HETNU5+ia1XLpyS228GISYs5Xrp6VRwbCxgdRXoYOrb59zQbc4yeAIe3H3Irv65/Y/ETXSw==
+releaseDate: '2019-07-15T03:24:20.791Z'
