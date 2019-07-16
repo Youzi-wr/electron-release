@@ -44,7 +44,7 @@ function updateHandle() {
     };
     const os = require('os');
 
-    autoUpdater.setFeedURL(`https://192.168.11.99/app/group/1173755242219520/filebox/root/%252Ftest-electron%252F/`);
+    autoUpdater.setFeedURL(`https://github.com/Youzi-wr/electron-release`);
     autoUpdater.on('error', function (error) {
         sendUpdateMessage(message.error)
     });
