@@ -2,7 +2,7 @@ package-lock.json
 node_modules
 dist/
 yarn.lock
-outPut/win-ia32-unpacked/
-outPut/builder-effective-config.yaml
-outPut/*.blockmap
+packages/win-ia32-unpacked/
+packages/builder-effective-config.yaml
+packages/*.blockmap
 

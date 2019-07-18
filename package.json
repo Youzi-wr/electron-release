@@ -38,7 +38,7 @@
       ]
     },
     "directories": {
-      "output": "./outPut"
+      "output": "./packages"
     }
   }
 }
