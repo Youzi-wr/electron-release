@@ -15,14 +15,13 @@ function createWindow() {
     });
 
     mainWindow.setMenu(null)
-    mainWindow.loadURL(`file://${__dirname}/login.html`)
+    mainWindow.loadURL(`file://${__dirname}/page/login.html`)
     mainWindow.on('closed', () => {
         mainWindow = null;
     });
 
     //尝试更新
     updateHandle();
-}
 
 app.on('ready', function () {
     globalShortcut.register('Ctrl+Shift+I', () => {
@@ -42,9 +41,8 @@ function updateHandle() {
         updateAva: '检测到新版本，正在下载……',
         updateNotAva: '现在使用的就是最新版本，不用更新',
     };
-    const os = require('os');
 
-    autoUpdater.setFeedURL(`https://github.com/Youzi-wr/electron-release`);
+    autoUpdater.setFeedURL(`http://localhost:8090/test-release/`);
     autoUpdater.on('error', function (error) {
         sendUpdateMessage(message.error)
     });

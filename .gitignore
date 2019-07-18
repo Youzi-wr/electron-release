@@ -1,7 +1,8 @@
+package-lock.json
 node_modules
 dist/
 yarn.lock
 outPut/win-ia32-unpacked/
 outPut/builder-effective-config.yaml
-outPut/electron-updater-example Setup 0.5.1.exe.blockmap
-package-lock.json
+outPut/*.blockmap
+

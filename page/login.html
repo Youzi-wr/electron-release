@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <strong>hello</strong> 
+    <div id="tip"></div>
+    <div id="downloadProgress"></div>
+</body>
+<script>
+    const { ipcRenderer } = require("electron");
+    ipcRenderer.send("checkForUpdate");
+    ipcRenderer.on("message", (event, text) => {
+        document.getElementById('tip').innerHTML = text;
+    });
+    //注意：“downloadProgress”事件可能存在无法触发的问题，只需要限制一下下载网速就好了
+    ipcRenderer.on("downloadProgress", (event, progressObj) => {
+        console.log(progressObj);
+        document.getElementById('downloadProgress').innerHTML = progressObj.percent || 0;
+    });
+    ipcRenderer.on("update-available", (event, progressObj) => {
+        console.log(progressObj);
+        document.getElementById('downloadProgress').innerHTML = progressObj.percent || 0;
+    });
+    ipcRenderer.on("download-progress", () => {
+        ipcRenderer.send("isUpdateNow");
+    });
+    window.onbeforeunload = function(){
+        ipcRenderer.removeAll(["message", "downloadProgress", "isUpdateNow"]);//remove只能移除单个事件，单独封装removeAll移除所有事件
+    };
+</script>
+
+</html>
