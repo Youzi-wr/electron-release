@@ -22,6 +22,7 @@ function createWindow() {
 
     //尝试更新
     updateHandle();
+}
 
 app.on('ready', function () {
     globalShortcut.register('Ctrl+Shift+I', () => {
