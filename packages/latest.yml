@@ -1,8 +1,8 @@
 version: 0.3.0
 files:
-  - url: electron-updater-example Setup 0.3.0.exe
-    sha512: 8D8J4yryKg1nABvuQnBQAhAT69h9CtDEM7FB1U1MNwjOuduqvjxS3J10Es08bSE13vCxiFutHWgdUQ5KY9ryMw==
-    size: 76964938
-path: electron-updater-example Setup 0.3.0.exe
-sha512: 8D8J4yryKg1nABvuQnBQAhAT69h9CtDEM7FB1U1MNwjOuduqvjxS3J10Es08bSE13vCxiFutHWgdUQ5KY9ryMw==
-releaseDate: '2019-07-16T03:31:38.004Z'
+  - url: crdc-v0.3.0-win.exe
+    sha512: yBc42i2+T2pQJkcGDanGiUQlJsX9GvlFdtev/Fmuo3gKhyu4eKEuGUp61Z2/QnKesXHinMfbPDu5gMbH0f1vPw==
+    size: 77246535
+path: crdc-v0.3.0-win.exe
+sha512: yBc42i2+T2pQJkcGDanGiUQlJsX9GvlFdtev/Fmuo3gKhyu4eKEuGUp61Z2/QnKesXHinMfbPDu5gMbH0f1vPw==
+releaseDate: '2019-07-19T10:03:54.290Z'
